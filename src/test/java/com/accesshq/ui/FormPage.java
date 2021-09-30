@@ -20,6 +20,7 @@ public class FormPage {
     public String getName() {
         return driver.findElement(By.cssSelector("input#name")).getAttribute("value");
     }
+
     public void setEmail(String email) {
         driver.findElement(By.cssSelector("input#email")).sendKeys(email);
     }
@@ -53,12 +54,5 @@ public class FormPage {
         return driver.findElement(By.id("email-err")).isDisplayed();
     }
 
-    public boolean isAgreeErrDisplayed() {
-        return true;
-    }
-
-    //forgot what this does so saving in case :))))
-    public WebElement findX () {
-        return driver.findElement(By.cssSelector("[aria-label=forms]"));
-    }
+    public boolean isAgreeErrDisplayed() { return driver.findElement(By.id("agree-err")).isDisplayed(); }
 }

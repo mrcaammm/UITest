@@ -26,19 +26,14 @@ public class formsPageTests {
     public void submitErrorTest() {
         //Setup
         FormPage formPage = new FormPage(driver);
+
+        //Act
         formPage.findSubmit().click();
 
+        //Assert
         Assertions.assertTrue(formPage.isNameErrDisplayed());
         Assertions.assertTrue(formPage.isEmailErrDisplayed());
         Assertions.assertTrue(formPage.isAgreeErrDisplayed());
-
-        //Act
-        var response = driver.findElement(By.cssSelector("[id='name-err']"));
-        var response2 = driver.findElement(By.cssSelector("[id='email-err']"));
-
-        //Assert
-        Assertions.assertEquals(response.getText(),"Your name is required");
-        Assertions.assertEquals(response2.getText(),"Your email is required");
     }
 
     @Test
