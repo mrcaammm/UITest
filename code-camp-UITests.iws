@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8de2b6f-4e94-414a-9d0e-0f3ca8a90cc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/code-camp-UITests.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/uitests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/homePageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/planetPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-camp-UITests.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp-UITests.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/uitests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/formsPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +256,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.uitests.jupDistTest">
+  <component name="RunManager" selected="JUnit.planetPageTests">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -287,7 +284,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uitests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="formsPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp-UITests" />
       <extension name="coverage">
         <pattern>
@@ -296,7 +293,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.formsPageTests" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -307,7 +304,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uitests.checkTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="formsPageTests.jupDistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp-UITests" />
       <extension name="coverage">
         <pattern>
@@ -316,49 +313,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.uitests" />
-      <option name="METHOD_NAME" value="checkTextTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="uitests.fullSubmitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp-UITests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.uitests" />
-      <option name="METHOD_NAME" value="fullSubmitTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="uitests.jupDistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp-UITests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.formsPageTests" />
       <option name="METHOD_NAME" value="jupDistTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -370,7 +325,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uitests.submitErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="formsPageTests.submitErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp-UITests" />
       <extension name="coverage">
         <pattern>
@@ -379,7 +334,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.uitests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.formsPageTests" />
       <option name="METHOD_NAME" value="submitErrorTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -391,13 +346,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="homePageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp-UITests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.homePageTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="planetPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp-UITests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.Tests.planetPageTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.uitests.jupDistTest" />
-        <item itemvalue="JUnit.uitests" />
-        <item itemvalue="JUnit.uitests.submitErrorTest" />
-        <item itemvalue="JUnit.uitests.checkTextTest" />
-        <item itemvalue="JUnit.uitests.fullSubmitTest" />
+        <item itemvalue="JUnit.planetPageTests" />
+        <item itemvalue="JUnit.formsPageTests" />
+        <item itemvalue="JUnit.homePageTests" />
+        <item itemvalue="JUnit.formsPageTests.jupDistTest" />
+        <item itemvalue="JUnit.formsPageTests.submitErrorTest" />
       </list>
     </recent_temporary>
   </component>
