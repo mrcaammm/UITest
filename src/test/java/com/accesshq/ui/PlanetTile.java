@@ -19,12 +19,12 @@ public class PlanetTile {
         return this.name;
     }
 
-    public long getPlanetDistance(PlanetTile planetTile) {
+    public long getPlanetDistance() {
         String distance = planet.findElement(By.className("distance")).getText().split(" ")[0];
         return Long.parseLong(distance.replaceAll(",", ""));
     }
 
-    public long getPlanetRadius(PlanetTile planetTile) {
+    public long getPlanetRadius() {
         String distance = planet.findElement(By.className("radius")).getText().split(" ")[0];
         return Long.parseLong(distance.replaceAll(",", ""));
     }

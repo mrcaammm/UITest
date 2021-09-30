@@ -26,10 +26,10 @@ public class planetPageTests {
 
         //Act
         var planetTile = planetPage.getPlanet(planetPage.getPlanets());
-        System.out.println("Jupiter's distance from the sun is: " + planetTile.getPlanetDistance(planetTile));
+        System.out.println("Jupiter's distance from the sun is: " + planetTile.getPlanetDistance());
 
         //Assert
-        Assertions.assertEquals(planetTile.getPlanetDistance(planetTile), 778500000);
+        Assertions.assertEquals(planetTile.getPlanetDistance(), 778500000);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class planetPageTests {
         //Act
         var planetTile = planetPage.getPlanet(planetPage.getPlanets());
         System.out.println(planetTile.getPlanetName());
-        System.out.println(planetTile.getPlanetDistance(planetTile));
-        System.out.println(planetTile.getPlanetRadius(planetTile));
+        System.out.println(planetTile.getPlanetDistance());
+        System.out.println(planetTile.getPlanetRadius());
     }
 }

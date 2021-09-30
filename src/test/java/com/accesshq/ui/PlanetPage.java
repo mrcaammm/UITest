@@ -15,14 +15,6 @@ public class PlanetPage {
         this.driver = driver;
     }
 
-    public String getPlanetName(WebElement planet) {
-        return planet.findElement(By.className("name headline primary--text")).getText();
-    }
-
-    public String getPlanetDistance(WebElement planet) {
-        return planet.findElement(By.className("distance")).getText();
-    }
-
     public List<WebElement> getPlanets() {
         return driver.findElements(By.cssSelector("[class='planet']"));
     }

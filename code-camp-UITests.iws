@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f8de2b6f-4e94-414a-9d0e-0f3ca8a90cc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/code-camp-UITests.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp-UITests.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/formsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/formsPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/planetPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/Tests/planetPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +256,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.formsPageTests.submitErrorTest">
+  <component name="RunManager" selected="JUnit.planetPageTests">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -388,10 +389,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.planetPageTests" />
         <item itemvalue="JUnit.formsPageTests.submitErrorTest" />
         <item itemvalue="JUnit.planetPageTests.printValues" />
         <item itemvalue="JUnit.planetPageTests.jupDistTest" />
-        <item itemvalue="JUnit.planetPageTests" />
         <item itemvalue="JUnit.formsPageTests" />
       </list>
     </recent_temporary>
