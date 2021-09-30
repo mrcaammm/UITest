@@ -25,14 +25,12 @@ public class formsPageTests {
     @Test
     public void submitErrorTest() {
         //Setup
-        FormPage fpage = new FormPage(driver);
-        fpage.findSubmit().click();
+        FormPage formPage = new FormPage(driver);
+        formPage.findSubmit().click();
 
-        Assertions.assertTrue(fpage.isNameErrDisplayed());
-        Assertions.assertTrue(fpage.isEmailErrDisplayed());
-        Assertions.assertTrue(fpage.isAgreeErrDisplayed());
-
-       //  findSubmit(formsDriver).click();
+        Assertions.assertTrue(formPage.isNameErrDisplayed());
+        Assertions.assertTrue(formPage.isEmailErrDisplayed());
+        Assertions.assertTrue(formPage.isAgreeErrDisplayed());
 
         //Act
         var response = driver.findElement(By.cssSelector("[id='name-err']"));
@@ -46,14 +44,14 @@ public class formsPageTests {
     @Test
     public void checkTextTest() {
         //Setup
-        FormPage fpage = new FormPage(driver);
+        FormPage formPage = new FormPage(driver);
 
         //Act
-        fpage.setName("Cameron Coyle");
-        fpage.setEmail("cameron.coyle@accesshq.com");
+        formPage.setName("Cameron Coyle");
+        formPage.setEmail("cameron.coyle@accesshq.com");
 
-        var str = fpage.getName();
-        var str2 = fpage.getEmail();
+        var str = formPage.getName();
+        var str2 = formPage.getEmail();
 
         //Assert
         Assertions.assertTrue(!str.isEmpty());
@@ -63,10 +61,10 @@ public class formsPageTests {
     @Test
     public void checkboxTest() {
         //Setup
-        FormPage fpage = new FormPage(driver);
+        FormPage formPage = new FormPage(driver);
 
         //Act
-        fpage.findAgree().click();
+        formPage.findAgree().click();
 
         //Assert
         //Assertions.assertTrue(checkbox.isSelected());
@@ -75,15 +73,15 @@ public class formsPageTests {
     @Test
     public void fullSubmitTest() {
         //Setup
-        FormPage fpage = new FormPage(driver);
+        FormPage formPage = new FormPage(driver);
 
         //Act
-        fpage.setName("Cameron Coyle");
-        fpage.setEmail("cameron.coyle@accesshq.com");
-        fpage.findAgree().click();
-        fpage.findSubmit().click();
+        formPage.setName("Cameron Coyle");
+        formPage.setEmail("cameron.coyle@accesshq.com");
+        formPage.findAgree().click();
+        formPage.findSubmit().click();
 
-        var popup = fpage.getPopup();
+        var popup = formPage.getPopup();
         new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(popup));
 
         //Assert

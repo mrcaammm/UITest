@@ -16,23 +16,22 @@ public class PlanetPage {
     }
 
     public String getPlanetName(WebElement planet) {
-        var str = planet.findElement(By.className("name headline primary--text"));
-        return str.getText();
+        return planet.findElement(By.className("name headline primary--text")).getText();
     }
 
     public String getPlanetDistance(WebElement planet) {
-        var str = planet.findElement(By.className("distance"));
-        return str.getText();
+        return planet.findElement(By.className("distance")).getText();
     }
 
     public List<WebElement> getPlanets() {
         return driver.findElements(By.cssSelector("[class='planet']"));
     }
 
-    public WebElement getPlanet (List<WebElement> planets) {
-        for (WebElement ele : planets) {
-            if (ele.findElement(By.tagName("h2")).getText().equals("Jupiter")) {
-                return ele;
+    public PlanetTile getPlanet (List<WebElement> planets) {
+        for (WebElement planet : planets) {
+            if (planet.findElement(By.tagName("h2")).getText().equals("Jupiter")) {
+                PlanetTile planetTile = new PlanetTile(planet);
+                return planetTile;
             }
         }
         throw new NoSuchElementException("No button found");

@@ -1,12 +1,9 @@
 package com.accesshq.Tests;
 
-import com.accesshq.ui.FormPage;
 import com.accesshq.ui.PlanetPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class planetPageTests {
     WebDriver driver;
@@ -28,12 +25,22 @@ public class planetPageTests {
         PlanetPage planetPage = new PlanetPage(driver);
 
         //Act
-        var planet = planetPage.getPlanet(planetPage.getPlanets());
-        System.out.println("Jupiter's distance from the sun is: " + planetPage.getPlanetDistance(planet));
+        var planetTile = planetPage.getPlanet(planetPage.getPlanets());
+        System.out.println("Jupiter's distance from the sun is: " + planetTile.getPlanetDistance(planetTile));
 
         //Assert
-        Assertions.assertEquals(planetPage.getPlanetDistance(planet), "778,500,000 km");
+        Assertions.assertEquals(planetTile.getPlanetDistance(planetTile), 778500000);
     }
 
+    @Test
+    public void printValues() {
+        //Setup
+        PlanetPage planetPage = new PlanetPage(driver);
 
+        //Act
+        var planetTile = planetPage.getPlanet(planetPage.getPlanets());
+        System.out.println(planetTile.getPlanetName());
+        System.out.println(planetTile.getPlanetDistance(planetTile));
+        System.out.println(planetTile.getPlanetRadius(planetTile));
+    }
 }
