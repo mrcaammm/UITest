@@ -24,8 +24,8 @@ public class PlanetTile {
         return Long.parseLong(distance.replaceAll(",", ""));
     }
 
-    public long getPlanetRadius() {
-        String distance = planet.findElement(By.className("radius")).getText().split(" ")[0];
-        return Long.parseLong(distance.replaceAll(",", ""));
+    public double getPlanetRadius() {
+        String radius = planet.findElement(By.className("radius")).getText().split(" ")[0];
+        return Double.parseDouble(radius.replaceAll(",", ""));
     }
 }
